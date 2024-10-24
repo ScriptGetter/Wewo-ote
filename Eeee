@@ -1,0 +1,81 @@
+-- MADE BY AMBUSHED SHADOW #3113
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local credit = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local aimbot = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+main.Position = UDim2.new(0.251069903, 0, 0.191235065, 0)
+main.Size = UDim2.new(0, 362, 0, 154)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+credit.Name = "credit"
+credit.Parent = main
+credit.BackgroundColor3 = Color3.new(1, 0, 0)
+credit.Size = UDim2.new(0, 352, 0, 30)
+credit.Font = Enum.Font.GothamBold
+credit.Text = "Aresenal Gui made by ambushed shadow #3113"
+credit.TextColor3 = Color3.new(0, 0, 0)
+credit.TextSize = 12
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.Position = UDim2.new(0.872928202, 0, 0, 0)
+close.Size = UDim2.new(0, 46, 0, 30)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextSize = 14
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+aimbot.Name = "aimbot"
+aimbot.Parent = main
+aimbot.BackgroundColor3 = Color3.new(0.294118, 0.811765, 0.152941)
+aimbot.Position = UDim2.new(0.0524861887, 0, 0.266233772, 0)
+aimbot.Size = UDim2.new(0, 320, 0, 95)
+aimbot.Font = Enum.Font.SourceSans
+aimbot.Text = "Aimbot and esp"
+aimbot.TextColor3 = Color3.new(1, 0, 0)
+aimbot.TextSize = 50
+aimbot.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/4ZisLvKz'),true))()
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(0, 0, 0)
+openmain.Position = UDim2.new(0.338088453, 0, 0.743027806, 0)
+openmain.Size = UDim2.new(0, 241, 0, 90)
+openmain.Active = true
+openmain.Draggable = true
+
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 241, 0, 90)
+open.Font = Enum.Font.GothamBold
+open.Text = "Open"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 14
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+
+end)
+-- Scripts:
